@@ -133,6 +133,10 @@
     transform: translate(30%, 0%);
   }
   
+  .desktop{
+    text-align: end;
+  }
+  
   /* tablet View  */
   @media only screen and (max-width: 768px) {
     .btn-wrap {
@@ -153,6 +157,11 @@
       text-align: center;
       margin: 95px 0 75px 0;
   }
-  
+  .col-md-6{
+    text-align: center;
+    padding: 4px;
+    
   }
+  }
+ 
   

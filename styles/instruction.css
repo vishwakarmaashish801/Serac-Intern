@@ -160,7 +160,10 @@
   li::marker {
     color: #0f62ac;
   }
-
+  
+  .desktop{
+    text-align: end;
+  }
 
 @media only screen and (max-width: 600px) {
 	body {
@@ -174,6 +177,11 @@
 		/* border-top-left-radius: 60px; */
 		/* border-bottom-right-radius: 60px; */
 	}
+  .col-md-6{
+    text-align: center;
+    padding: 4px;
+    
+  }
 	
   }
   
