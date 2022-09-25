@@ -1,0 +1,31 @@
+.box{
+    margin-top:15%;
+}
+.intro-proceed {
+    margin-top: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.intro-btn {
+    margin-left: 0.5em;
+}
+
+.btn {
+    
+    cursor: pointer;
+    position: relative;
+    background-color:#ff8a00;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font: inherit inherit inherit inherit inherit inherit inherit inherit inherit;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    outline: 0px;
+    padding: 0.5em 1em;
+    
+    transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+}
