@@ -18,7 +18,7 @@
   .container .box-container {
     padding: 12px;
     border: 3px solid grey;
-    margin: 20% 0 0 0;
+    margin: 8% 0 0 0;
     border-top-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
@@ -161,13 +161,6 @@
     color: #0f62ac;
   }
 
-  .table-box{
-   margin-top: 200px;
-   /* border: 2px solid #0f62ac; */
-}
-
-
-
 
 @media only screen and (max-width: 600px) {
 	body {
@@ -177,14 +170,14 @@
 	.container .box-container {
 		padding: 12px;
 		border: 0px solid grey;
-		margin: 16% 0 0 0;
+		margin: 8% 0 0 0;
 		/* border-top-left-radius: 60px; */
 		/* border-bottom-right-radius: 60px; */
 	}
 	
   }
   
-  
+
   @media only screen and (max-width: 768px) {
     .inst-text {
       line-height:20px;
