@@ -6,18 +6,23 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Elearn project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap/bootstrap.min.css">
 <!--  -->
+<!-- Bootstrap CSS -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+crossorigin="anonymous"
+/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
-
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-<link href="plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
+<!-- Jquery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
-<link rel="stylesheet" type="text/css" href="styles/instruction.css">
+<link rel="stylesheet" type="text/css" href="styles/question.css">
 </head>
 <body >
 
@@ -35,7 +40,8 @@
 						<div class="col">
 							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
 								<ul class="top_bar_contact_list">
-									<li class="text-light"><div class="question">Student Dashboard</div></li>
+                  <li class="text-light"><div class="question">Student Dashboard </div></li>
+									<li class="text-light"><div class="question">Student Name : XYZ  <span class="\t&lnb"> Gender : Male </span></div></li>
 								</ul>
 								<div class="top_bar_login ml-auto">
 									<ul>
@@ -71,8 +77,8 @@
 									<li><a href="#">notification</a></li>
 									<li><a href="#">result Annousement</a></li>
 									<li><a href="#">exam date</a></li>
-									<li class="active"><a href="#">assestment</a></li>
-									<li><a href="#">Dashboard</a></li>
+									<li class="active"><a href="#" >question</a></li>
+									<li ><a href="#">dashboard</a></li>
 								</ul>
 								<div class="search_button">
                                 </div>
@@ -126,16 +132,22 @@
         <!-- toggle menu -->
 		<nav class="menu_nav">
 			<ul class="menu_mm">
-        <li class="menu_mm"><a href="index.html">Home</a></li>
+        
+				<li class="menu_mm"><a href="index.html">Home</a></li>
 				<li class="menu_mm"><a href="#">Notification</a></li>
 				<li class="menu_mm"><a href="#">Result Announcement</a></li>
 				<li class="menu_mm"><a href="#">Exam Date</a></li>
-				<li class="menu_mm"><a href="#">Instruction </a></li>
+				<li class="menu_mm"><a href="#">Question </a></li>
 				<li class="menu_mm"><a href="#">Dashboard</a></li>
-			</ul>
+        
+               </ul>
 		</nav>
 		<div class="menu_extra">
-			<div class="menu_phone"><span class="menu_title">phone:</span>(+91) 9768421308 </div>
+      
+			<div class="menu_phone"><span class="menu_title qlist">Student Name :</span> XYZ 
+        <ul>
+					<li class="qlist"> <a href="index.html"><i class="fa " aria-hidden="true"></i>Logout</a></li> </ul>
+        </div>
 			<div class="menu_social">
 				<span class="menu_title">follow us</span>
 				<ul>
@@ -148,221 +160,287 @@
 		</div>
 	</div>
 
-  <!-- Display Name Student  -->
-<div class="container">
-  <div class=" row display_name mt-4">
-   <!-- name -->
-    <div class="col-md-6"> <span class="text-dark">Ashish Vishwakarma</span>
-   <p><span>Gender : Male</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Div : B / 108</span></p></div>
-   <!--timer  -->
-   <div class="col-md-6 desktop"><h4><span> Time Left :- </span> &nbsp;&nbsp;<span class="bg-warning p-2">6:45</span></h4></div>
-   </div>
-  </div>  
+    <!-- Main Content Star̥t -->
+	    <!-- main content  -->
+   <div class="container mt-5 ">
+    
+    <div class="main" id="Div1">
+        <h3 class="mt-2 mb-4 text-center" style="color:#2170AC">Section A</h3>
+        <div class="main" id="firstList"></div>
+    </div><br>
 
-
-   <!-- Main Content Start Question Form-->
-   
-   <div class="container table-box">
-    <!-- Main Content Start Question Form-->
-    <h3 class="text-center ">Section A </h3>
-   
-     <table class="table">
-      <tr class="header-table">
-        <th>Sr No </th>
-        <th>Question </th>
-        <th class="text-center">Option</th>
-     </tr>
-   
-     <tr>
-       <td class="sr-no text-center"> 1</td> 
-        <td> <label>Option two can be something else and selecting it will deselect option one</label>
-        </td>
-          <td class="option text-center"><input type="radio" name="option"sRadios" id="option"sRadios2" value="option1" class="inp-btn"/> <span class="option"_yes">Yes </span>
-              <input type="radio" name="option"sRadios" id="option"sRadios2" value="option1"><span class="option"_no"> No </span>
-            </td>
-     </tr>
-     <tr class="even-tr">
-        <td class="sr-no text-center">2</td> 
-         <td> <label>Option two can be something else and selecting it will deselect option one</label>
-         </td>
-           <td class="option text-center"><input type="radio" name="option"sRadios" id="option"sRadios2" value="option2" class="inp-btn"/> <span class="option"-yes">Yes </span>
-               <input type="radio" name="option"sRadios" id="option"sRadios2" value="option2"><span class="option"_no"> No </span>
-             </td>
-      </tr>
-      <tr>
-          <td class="sr-no text-center">3</td> 
-           <td> <label>Option two can be something else and selecting it will deselect option one</label>
-           </td>
-             <td class="option text-center"><input type="radio" name="option"sRadios" id="option"sRadios2" value="option3" class="inp-btn"/> <span class="option"-yes">Yes </span>
-                 <input type="radio" name="option"sRadios" id="option"sRadios2" value="option3"><span class="option"_no"> No </span>
-               </td>
-        </tr>
-         <tr class="even-tr">
-       <td class="sr-no text-center"> 4</td> 
-        <td> <label>Option two can be something else and selecting it will deselect option one</label>
-        </td>
-          <td class="option text-center"><input type="radio" name="option"sRadios" id="option"sRadios2" value="option"2" class="inp-btn"/> <span class="option"-yes">Yes </span>
-              <input type="radio" name="option"sRadios" id="option"sRadios2" value="option"2"><span class="option"_no"> No </span>
-            </td>
-     </tr> <tr>
-        <td class="sr-no text-center">5</td> 
-         <td> <label>Option two can be something else and selecting it will deselect option one</label>
-         </td>
-           <td class="option text-center"><input type="radio" name="option"sRadios" id="option"sRadios2" value="option"2" class="inp-btn"/> <span class="option"-yes">Yes </span>
-               <input type="radio" name="option"sRadios" id="option"sRadios2" value="option"2"><span class="option"_no"> No </span>
-             </td>
-      </tr>
-      <tr class="even-tr">
-          <td class="sr-no text-center"> 6</td> 
-           <td> <label>Option two can be something else and selecting it will deselect option one</label>
-           </td>
-             <td class="option text-center"><input type="radio" name="option"sRadios" id="option"sRadios2" value="option"2" class="inp-btn"/> <span class="option"-yes">Yes </span>
-                 <input type="radio" name="option"sRadios" id="option"sRadios2" value="option"2"><span class="option"_no"> No </span>
-               </td>
-        </tr>
-        <tr>
-            <td class="sr-no text-center"> 7</td> 
-             <td> <label>Option two can be something else and selecting it will deselect option one</label>
-             </td>
-               <td class="option text-center"><input type="radio" name="option"sRadios" id="option"sRadios2" value="option"2" class="inp-btn"/> <span class="option"-yes">Yes </span>
-                   <input type="radio" name="option"sRadios" id="option"sRadios2" value="option"2"><span class="option"_no"> No </span>
-                 </td>
-          </tr>
-          <tr class="even-tr">
-              <td class="sr-no text-center"> 8</td> 
-               <td> <label>Option two can be something else and selecting it will deselect option one</label>
-               </td>
-                 <td class="option text-center"><input type="radio" name="option"sRadios" id="option"sRadios2" value="option"2" class="inp-btn"/> <span class="option"-yes">Yes </span>
-                     <input type="radio" name="option"sRadios" id="option"sRadios2" value="option"2"><span class="option"_no"> No </span>
-                   </td>
-            </tr>
-            <tr>
-                <td class="sr-no text-center "> 9</td> 
-                 <td> <label>Option two can be something else and selecting it will deselect option one</label>
-                 </td>
-                   <td class="option text-center"><input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2" class="inp-btn"/> <span class="option""-yes">Yes </span>
-                       <input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2"><span class="option""_no"> No </span>
-                     </td>
-              </tr>
-              <tr class="even-tr"> 
-                  <td class="sr-no text-center"> 10</td> 
-                   <td> <label>Option two can be something else and selecting it will deselect option one</label>
-                   </td>
-                     <td class="option text-center"><input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2" class="inp-btn"/> <span class="option""-yes">Yes </span>
-                         <input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2"><span class="option""_no"> No </span>
-                       </td>
-                </tr>
-                <tr >
-                    <td class="sr-no text-center"> 11</td> 
-                     <td> <label>Option two can be something else and selecting it will deselect option one</label>
-                     </td>
-                       <td class="option text-center"><input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2" class="inp-btn"/> <span class="option""-yes">Yes </span>
-                           <input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2"><span class="option""_no"> No </span>
-                         </td>
-                  </tr>
-                  <tr class="even-tr">
-                      <td class="sr-no text-center"> 12</td> 
-                       <td> <label>Option two can be something else and selecting it will deselect option one</label>
-                       </td>
-                         <td class="option text-center"><input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2" class="inp-btn"/> <span class="option""-yes">Yes </span>
-                             <input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2"><span class="option""_no"> No </span>
-                           </td>
-                    </tr>
-                    <tr>
-                        <td class="sr-no text-center"> 13</td> 
-                         <td> <label>Option two can be something else and selecting it will deselect option one</label>
-                         </td>
-                           <td class="option text-center"><input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2" class="inp-btn"/> <span class="option""-yes">Yes </span>
-                               <input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2"><span class="option""_no"> No </span>
-                             </td>
-                      </tr>
-                      <tr class="even-tr">
-                          <td class="sr-no text-center"> 14</td> 
-                           <td> <label>Option two can be something else and selecting it will deselect option one</label>
-                           </td>
-                             <td class="option text-center"><input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2" class="inp-btn"/> <span class="option""-yes">Yes </span>
-                                 <input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2"><span class="option""_no"> No </span>
-                               </td>
-                        </tr>
-                        <tr>
-                            <td class="sr-no text-center"> 15</td> 
-                             <td> <label>Option two can be something else and selecting it will deselect option one</label>
-                             </td>
-                               <td class="option text-center"><input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2" class="inp-btn"/> <span class="option""-yes">Yes </span>
-                                   <input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2"><span class="option""_no"> No </span>
-                                 </td>
-                          </tr>
-                          <tr class="even-tr">
-                              <td class="sr-no text-center" > 16</td> 
-                               <td> <label>Option two can be something else and selecting it will deselect option one</label>
-                               </td>
-                                 <td class="option text-center"><input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2" class="inp-btn"/> <span class="option""-yes">Yes </span>
-                                     <input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2"><span class="option""_no"> No </span>
-                                   </td>
-                            </tr>
-                            <tr>
-                                <td class="sr-no text-center"> 17</td> 
-                                 <td> <label>Option two can be something else and selecting it will deselect option one</label>
-                                 </td>
-                                   <td class="option text-center"><input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2" class="inp-btn"/> <span class="option""-yes">Yes </span>
-                                       <input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2"><span class="option""_no"> No </span>
-                                     </td>
-                              </tr>
-                              <tr class="even-tr">
-                                  <td class="sr-no text-center"> 18</td> 
-                                   <td> <label>Option two can be something else and selecting it will deselect option one</label>
-                                   </td>
-                                     <td class="option text-center"><input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2" class="inp-btn"/> <span class="option""-yes">Yes </span>
-                                         <input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2"><span class="option""_no"> No </span>
-                                       </td>
-                                </tr>
-                                <tr>
-                                    <td class="sr-no text-center">19</td> 
-                                     <td> <label>Option two can be something else and selecting it will deselect option one</label>
-                                     </td>
-                                       <td class="option text-center"><input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2" class="inp-btn"/> <span class="option""-yes">Yes </span>
-                                           <input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2"><span class="option""_no"> No </span>
-                                         </td>
-                                  </tr>
-                                  <tr class="even-tr">
-                                      <td class="sr-no text-center"> 20</td> 
-                                       <td> <label>Option two can be something else and selecting it will deselect option one</label>
-                                       </td>
-                                         <td class="option text-center"><input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2" class="inp-btn"/> <span class="option""-yes">Yes </span>
-                                             <input type="radio" name="option""sRadios" id="option""sRadios2" value="option""2"><span class="option"_no"> No </span>
-                                           </td>
-                                    </tr>
-    </table>
-  
-    <nav aria-label="...">
-        <ul class="pager">
-          <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Before Page</a></li>
-          <li class="next"><a href="result.html">Submit <span aria-hidden="true">&rarr;</span></a></li>
-        </ul>
-      </nav>
+    <div class="main" id="Div2">
+        <h3 class="text-center" style="color:#2170AC">Section B</h3>
+      <div class="main my-4" id="secondList"></div>
+    </div>
   </div>
+
+    <!-- <button onclick="myFunction()" class="btn" > Before </button> -->
+    <div class="btn-div mt-2 mb-4">
+    <button  class="btn continue" onclick="Question()"> Continue </button>
+    <button  class="btn continue" onclick="Question()">Submit </button>
+    </div>
+  
+   
+  </div>
+
+
+	<!-- Footer -->
+	<footer>
+		<div class="container-fluid " style="background-color: #2170AC;">
+		<div class="row p-5">
+		  <!--  -->
+	 <div class="col-md-6 p">
+	   <div class="company-detail text-light mob footer-text">
+		 <ul  style="list-style:none">
+		   <li> <b>Serac Education Pvt. Ltd. </b></li>
+		   <li>618, Nirmal Corporate Centre,.</li>
+		   <li>LBS Road, Moti Nagar, Mulund West, Mumbai 400080.</li>
+	   </div>
+	 </div>
+	 <!--  -->
+	 <div class="col-md-6">
+		<div class="company-detail text-light  desktop mob  footer-text">
+		  <ul style="list-style:none">
+			<li>Phone No : 9967153285</li>
+			<li>Email : info@seracedu.com</li>
+			<li>Website : <a href="https://www.ollato.com/" target="_blank"> <span class="text-light"> Ollato.com </span></a></li>
+		</div>
+	  </div>
 	
+		</div>
+		
+		<div class="row p-5">
+	
+			<div class="col-12">
+				<div class="company-detail text-light text-center mob">
+				  <ul style="list-style:none">
+					<li>Copy right 	&#169; 2022: All Rights Reserved.</li>
+				  </ul>
+					
+				</div>
+			  </div> 
+		</div>
+	
+		</div>
+		</div>
+	  </footer>
+    <script>
+      var questions;
+     var continuee = $(".continue");
+     console.log("button working");
+  
+  
+      function Question() {
+         var myArray =  [
+          { sr: 1, question: "I am well adjusted to my new environment (school/college/coaching classes/hostel life)", 
+          answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}]
+        },  
+  
+          { sr: 2, question: "I feel lonely most of the days",
+          answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+  
+          { sr: 3, question: "I have friendly association with my fellow students",
+          answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+  
+          { sr: 4, question: "I have not issues with joining a group of people/students in their conversations", 
+          answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+          
+          { sr: 5, question: "I avoid meeting my classmates", 
+          answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+  
+          { sr: 6, question: "I feel the teachers neglect me", 
+           answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+  
+          { sr: 7, question: "I like to sit in the front seat in the class",
+            answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+  
+          { sr: 8, question: "I hesitate to ask questions in the class",
+          answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+  
+          { sr: 9, question: "I feel happy to participate in open discussion in class", 
+           answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+  
+          { sr: 10, question: "I am always ready to help my classmates",
+           answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+  
+          { sr: 11, question: "I like studying in a group", 
+          answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+  
+          { sr: 12, question: "I often complain about my classmates/ teachers to my parents",
+            answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] }, 
+  
+          { sr: 13, question: "My teachers often tell me off for my progress in studies",
+          answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+  
+          { sr: 14, question: "My teachers are appreciative of my progress in class",
+          answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+          { sr: 15, question: "I am worried about/afraid of something at class/college/hostel etc",
+           answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+        
+        ];
+  
+        var myArray2 = [
+  
+          { sr: 16, question: "I am well adjusted to my new environment (school/college/coaching classes/hostel life)", answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+          { sr: 17, question: "I feel lonely most of the days", option: "Yes" },
+          { sr: 18, question: "I have friendly association with my fellow students",  answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+          { sr: 19, question: "I have not issues with joining a group of people/students in their conversations",  answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+          { sr: 20, question: "I avoid meeting my classmates", answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}]},
+          { sr: 21, question: "I feel the teachers neglect me", answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+          { sr: 22, question: "I like to sit in the front seat in the class",  answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+          { sr: 23, question: "I hesitate to ask questions in the class",  answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}] },
+          { sr: 24, question: "I feel happy to participate in open discussion in class",  answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}]},
+          { sr: 25, question: "I am always ready to help my classmates", answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}]},
+          { sr: 26, question: "I like studying in a group", answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}]},
+          { sr: 27, question: "I often complain about my classmates/ teachers to my parents", answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}]} , 
+          { sr: 28, question: "My teachers often tell me off for my progress in studies", answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}]},
+          { sr: 29, question: "My teachers are appreciative of my progress in class", answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}]},
+          { sr: 30, question: "I am worried about/afraid of something at class/college/hostel etc", answer: [ {a: "Yes", isCorrect: true }, { b: "No", isCorrect: false}]}
+      
+        ];
+  
+        var html = "<table border = 1|1>"
+        html += '<thead>';
+        html += '<tr class="theader">';
+        html += '<td class="sr_no">' + 'Q.No.' + '</td>';
+        html += '<td class="question">' + 'Question'  + '</td>';
+        html += '<td class="option">' + 'Option' + '</td>';
+      //  html += '<td>' + '<tr>'+ '<td>'+ '   <input id="op3" class="question-answer--option" type="radio" name="answer-option" value="3" />' + '<td>'+ '</tr>'+ '</td>';
+        html +='</tr>';
+        html +='</thead>'
+     
+        for (let i = 0; i < myArray.length; i++) {
+       
+          html += '<tr>';
+          html += '<td class="sr">'+ myArray[i].sr +'</td>';
+          html += '<td class="qlist">'+ myArray[i].question +  '</td>';
+          html +='<td class="option">' +  '<input type="radio"  name="answer-option-'+myArray[i].sr+'" value="'+ myArray[i].answer[0].a +'"/> '+ myArray[i].answer[0].a +' <input type="radio" name="answer-option-'+myArray[i].sr+'" value="'+ myArray[i].answer[1].b +'"/> '+ myArray[i].answer[1].b +'</td>';
+          html +='</tr>';
+  
+        }
+  
+        var html1 = "<table border = 1|1>"
+        html1 += '<thead>';
+        html1 += '<tr class="theader">';
+        html1 += '<td class="sr_no">' + 'Q.No.' + '</td>';
+        html1 += '<td class="question">' + 'Question'  + '</td>';
+        html1 += '<td class="option">' + 'Option' + '</td>';
+      //  html += '<td>' + '<tr>'+ '<td>'+ '   <input id="op3" class="question-answer--option" type="radio" name="answer-option" value="3" />' + '<td>'+ '</tr>'+ '</td>';
+        html1 +='</tr>';
+        html1 +='</thead>'
+     
+        for (let i = 0; i < myArray2.length; i++) {
+  
+          html1 += '<tr>';
+          html1 += '<td class="sr">'+ myArray2[i].sr +'</td>';
+          html1 += '<td class="qlist">'+ myArray2[i].question +  '</td>';
+          html1 +='<td class="option">' +  '<input type="radio"  name="answer-option-'+myArray2[i].sr+'" value="'+ myArray[i].answer[0].a +'"/> '+ myArray[i].answer[0].a +' <input type="radio" name="answer-option-'+myArray2[i].sr+'" value="'+ myArray[i].answer[1].b +'"/> '+ myArray[i].answer[1].b +'</td>';
+
+          html1 +='</tr>';
+  
+        }
+  
+        $("#firstList").html(html);
+        $("#secondList").html(html1);
+     
+      }
+  
+      Question();
+  
+      $(".continue").click(function () {
+  
+        if($('#Div2').is(':visible')){
+          
+          $("#Div2").css("display","none");
+          $("#Div1").css("display","block");
+        
+        }
+        else {
+  
+          $("#Div1").css("display","none");
+          $("#Div2").css("display","block");
+  
+        }
+  
+      })
+  
+      
+      // check demo
+    //   start = true;
+    //   var iterate ;
+    //    var sr;  
+    //   if(start){
+    // 				iterate(sr);
+    // 			}
+  
+    //   function iterate(sr) {
+      
+    //   $("#question-text").text(""+questions[sr].q);
+    //   $(".continue").attr("id",sr);
+      
+    //   $("#op1").val(questions[id].a[0].isCorrect);
+    //   $("#op2").val(questions[id].a[1].isCorrect);
+    //   $("#op3").val(questions[id].a[2].isCorrect);
+      
+    //   $("#op1text").text(""+questions[id].a[0].text);
+    //   $("#op2text").text(""+questions[id].a[1].text);
+    //   $("#op3text").text(""+questions[id].a[2].text);
+  
+    //   $("#op1").attr("data-id",id);
+    //   $("#op2").attr("data-id",id);
+    //   $("#op3").attr("data-id",id);
+      
+    // }
+  
+    // $("#op1").click(function() {
+    //   var ido = $(this).attr("data-id");
+    //   selected[ido] = $(this).val(); 
+    // });
+  
+    // $("#op2").click(function() {
+    //   var ido = $(this).attr("data-id");
+    //   selected[ido] = $(this).val(); 
+    // });
+  
+    // $("#op3").click(function() {
+    //   var ido = $(this).attr("data-id");
+    //   selected[ido] = $(this).val(); 
+    // });
+  
+    // $(continuee).on('click', function(){
+  
+    // var idd = $(this).attr("id");
+  
+    // // i = 0 to 9 
+    // if(idd <= (questions.length - 1)) {
+  
+    //   if(selected[idd] === 'undefined' || selected[idd] == null || selected[idd] === undefined) {
+    //     alert("select any one option");
+    //   }
+    //   else {
+    //     idd++;
+    //     if(idd <= (questions.length - 1)) {
+    //       iterate(idd);
+    //     }
+    //     else {
+    //       alert("submit quiz");
+    //     }
+    //   }
+    // }
+    // else {
+    //   alert("submit quiz");
+    // }
+  
+    // });
+    
+    </script>
 
 
 
-
-
-
-
-
+<!-- script start -->
 <script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/greensock/TweenMax.min.js"></script>
-<script src="plugins/greensock/TimelineMax.min.js"></script>
 <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
-<script src="plugins/greensock/animation.gsap.min.js"></script>
-<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="plugins/video-js/video.min.js"></script>
-<script src="plugins/video-js/Youtube.min.js"></script>
-<script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="js/custom.js"></script>
 
 </body>

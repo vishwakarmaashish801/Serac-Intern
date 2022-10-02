@@ -32,7 +32,7 @@
 1. Fonts
 ***********/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700,800,900');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700,800,900'); */
 
 /*********************************
 2. Body and some general stuff
@@ -48,7 +48,7 @@
 }
 body
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'auto';
 	font-size: 14px;
 	font-weight: 500;
 	background: #FFFFFF;
@@ -62,6 +62,10 @@ div
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.footer-text{
+    font-size: 20px;
+  }
+
 ul
 {
 	list-style: none;
@@ -354,7 +358,7 @@ section
 .top_bar
 {
 	width: 100%;
-	background: #2c2b31;
+	background: #92A9BD;
 }
 /* .header.scrolled .top_bar
 {
@@ -374,21 +378,13 @@ section
 {
 	display: inline-block;
 }
-.question
-{
-	font-family: 'Montserrat', serif;
-	font-size: 12px;
-	font-weight: 600 !important;
-	color: #918ea0;
-	margin-left: 0px;
-	text-transform: uppercase;
-}
+
 .top_bar_contact_list li > div
 {
 	display: inline-block;
 	font-size: 12px;
 	font-weight: 500;
-	color: #918ea0;
+	color: #000000;
 }
 .top_bar_contact_list li > div
 {
@@ -445,7 +441,7 @@ section
 .header_container
 {
 	width: 100%;
-	background: #FFFFFF;
+	background: #2170AC;
 }
 .header_content
 {
@@ -485,7 +481,7 @@ section
 	font-weight: 700;
 	line-height: 0.75;
 	margin-left: 1px;
-	color: #0f62ac;
+	color: #fff;
 	text-transform: uppercase;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
@@ -633,7 +629,7 @@ section
 .hamburger i
 {
 	font-size: 20px;
-	color: #0f62ac;
+	color: #fff;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -1928,9 +1924,7 @@ section
 
 
 @media only screen and (max-width: 600px) {
-	body {
-	  background-color: lightblue;
-	}
+	
 	.super_container
    {
 	margin-top:65px;

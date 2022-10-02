@@ -674,15 +674,15 @@ function computeAutoPlacement(placement, refRect, popper, reference, boundariesE
     }
   };
 
-  var sortedAreas = Object.keys(rects).map(function (key) {
-    return _extends({
-      key: key
-    }, rects[key], {
-      area: getArea(rects[key])
-    });
-  }).sort(function (a, b) {
-    return b.area - a.area;
-  });
+  // var sortedAreas = Object.keys(rects).map(function (key) {
+  //   return _extends({
+  //     key: key
+  //   }, rects[key], {
+  //     area: getArea(rects[key])
+  //   });
+  // }).sort(function (a, b) {
+  //   return b.area - a.area;
+  // });
 
   var filteredAreas = sortedAreas.filter(function (_ref2) {
     var width = _ref2.width,

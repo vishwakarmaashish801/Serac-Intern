@@ -6,15 +6,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Elearn project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap/bootstrap.min.css">
 <!--  -->
+<!-- Bootstrap CSS -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+crossorigin="anonymous"
+/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
-
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-<link href="plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 <link rel="stylesheet" type="text/css" href="styles/instruction.css">
@@ -35,7 +37,9 @@
 						<div class="col">
 							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
 								<ul class="top_bar_contact_list">
-									<li class="text-light"><div class="question">Student Dashboard</div></li>
+									<li class="text-light"><div class="question">Student Dashboard </div></li>
+									<li class="text-light"><div class="question">Student Name : XYZ  <span class="\t&lnb"> Gender : Male </span></div></li>
+
 								</ul>
 								<div class="top_bar_login ml-auto">
 									<ul>
@@ -190,7 +194,7 @@
           Click proceed to begin your test</span
         >
         <a href="question.html">
-          <h3 class="btn" id="btn-startTest" onclick="btnB();">
+          <h3 class="btn" id="btn-startTest">
             Start test
           </h3></a
         >
@@ -224,7 +228,45 @@
 	
 
 	<!-- Footer -->
-
+	<footer>
+		<div class="container-fluid headers" style="background-color: #2170AC;">
+		<div class="row p-5">
+		  <!--  -->
+	 <div class="col-md-6 p">
+	   <div class="company-detail text-light  footer-text">
+		 <ul  style="list-style:none">
+		   <li> <b>Serac Education Pvt. Ltd. </b></li>
+		   <li>618, Nirmal Corporate Centre,.</li>
+		   <li>LBS Road, Moti Nagar, Mulund West, Mumbai 400080.</li>
+	   </div>
+	 </div>
+	 <!--  -->
+	 <div class="col-md-6">
+		<div class="company-detail text-light desktop footer-text mob">
+		  <ul style="list-style:none">
+			<li>Phone No : 9967153285</li>
+			<li>Email : info@seracedu.com</li>
+			<li>Website : <a href="https://www.ollato.com/" target="_blank"> <span class="text-light"> Ollato.com </span></a></li>
+		</div>
+	  </div>
+	
+		</div>
+		
+		<div class="row p-5">
+	
+			<div class="col-12">
+				<div class="company-detail text-light text-center">
+				  <ul style="list-style:none">
+					<li>Copy right 	&#169; 2022: All Rights Reserved.</li>
+				  </ul>
+					
+				</div>
+			  </div> 
+		</div>
+	
+		</div>
+		</div>
+	  </footer>
 	
 
 
@@ -232,8 +274,8 @@
 <!-- script start -->
 
 <script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="styles/bootstrap/popper.js"></script>
+<script src="styles/bootstrap/bootstrap.min.js"></script>
 <script src="plugins/greensock/TweenMax.min.js"></script>
 <script src="plugins/greensock/TimelineMax.min.js"></script>
 <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
