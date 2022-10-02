@@ -315,7 +315,7 @@ crossorigin="anonymous"
           html += '<tr>';
           html += '<td class="sr">'+ myArray[i].sr +'</td>';
           html += '<td class="qlist">'+ myArray[i].question +  '</td>';
-          html +='<td class="option">' +  '<input type="radio"  name="answer-option-'+myArray[i].sr+'" value="'+ myArray[i].answer[0].a +'"/> '+ myArray[i].answer[0].a +' <input type="radio" name="answer-option-'+myArray[i].sr+'" value="'+ myArray[i].answer[1].b +'"/> '+ myArray[i].answer[1].b +'</td>';
+          html +='<td class="option">' +  '<input type="radio"  name="answer-option-'+myArray[i].sr+'" value="'+ myArray[i].answer[0].a +'"/> '+ myArray[i].answer[0].a +' <input type="radio" name="answer-option-'+myArray[i].sr+'" value="'+ myArray[i].answer[1].b +'"/> '+ myArray[i].answer[1].b +"&nbsp;&nbsp;"+'</td>';
           html +='</tr>';
   
         }

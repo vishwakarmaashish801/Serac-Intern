@@ -36,8 +36,16 @@
   .company-detail{
     margin-right: 50px;
   }
+  .footer-text{
+    font-size: 20px;
+  }
+  .desktop-img{
+    display: none;
+  }
+
   /* media query */
   @media only screen and (max-width: 600px) {
+
     .index-log{
           margin-top: -65px;
     }
@@ -54,14 +62,22 @@
     .text-end {
       text-align: center !important;
     }
-    .mob{
-      display: none;
+    p-5{
+      padding:1px 0 1px  !important;
     }
+    
     .btn {
-     
-      padding: 0px 24px;
+      background-color: #2170AC;
+      padding: 10px 40px;
       color: #fff;
   }
+  .p-5 {
+    padding: 3rem 0px!important;
+}
+  .mob{
+     display: none;
+  }
+  
    
   }
   

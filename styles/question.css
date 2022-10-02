@@ -77,37 +77,48 @@ body {
   #Div2 {
     display: none;
   }
+  @media only screen and (max-width: 600px) {
+	
+    .container .box-container {
+      padding: 12px;
+      border: 0px solid grey;
+      margin: 8% 0 0 0;
+      /* border-top-left-radius: 60px; */
+      /* border-bottom-right-radius: 60px; */
+    }
+    .col-md-6{
+      text-align:start;
+      padding: 4px;
+      
+    }
+    .desktop{
+      text-align: start;
+    }
+    .intro-proceed {
+      font-size: 15px;
+   }
+   .qlist{
+    font-size:6px;
+}
 
+  }
+    /* this is write css for mobile */
   @media only screen and (max-width: 480px)
   {
-    table{
-      width: min-content;
-    }
-
-    qlist{
-        font-size:8px;
-    }
-  
-      
-  }
-
-  
-  @media only screen and (max-width: 320px)
-  {
-    
-
+   
     .qlist{
-        font-size:8px;
+        font-size: 15px;
     }
-
-    
     .mob{
-        font-size: 17px;
-        margin-bottom: 30px;
-        line-height: 30px;
-    }
-  .desktop{
-    text-align: start;
+      font-size: 17px;
+      margin-bottom: 30px;
+      line-height: 30px;
   }
+.desktop{
+  text-align: start;
+}
+  
       
   }
+
+  
