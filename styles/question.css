@@ -80,8 +80,12 @@ body {
 
   @media only screen and (max-width: 480px)
   {
-    .qlist{
-        font-size: 20px;
+    table{
+      width: min-content;
+    }
+
+    qlist{
+        font-size:8px;
     }
   
       
